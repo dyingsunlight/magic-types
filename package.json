@@ -1,0 +1,31 @@
+{
+  "name": "magic-types",
+  "version": "0.0.2",
+  "main": "dist/esm/index.js",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "readme.md"
+  ],
+  "scripts": {
+    "prepare": "rm -rf dist && tsc -p tsconfig.json",
+    "test": "ts-mocha -p test/tsconfig.json test/index.ts"
+  },
+  "maintainers": [
+    {
+      "email": "dyingsunlight@gmail.com",
+      "name": "Dogfish"
+    }
+  ],
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.11",
+    "base64-arraybuffer": "^1.0.2",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}

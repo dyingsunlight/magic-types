@@ -1,0 +1,23 @@
+{
+  "allowTsInNodeModules": true,
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "sourceRoot": "src",
+    "baseUrl": "src",
+    "outDir": "dist/esm",
+    "declaration": true,
+    "strict": false
+  },
+  "include": [
+    "src"
+  ],
+  "watchOptions": {
+    "watchFile": "PriorityPollingInterval",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  }
+}

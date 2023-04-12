@@ -1,0 +1,10 @@
+.DS_Store
+.dev
+# /assets
+.cache
+node_modules
+*.db
+.idea/
+reports
+dist
+
