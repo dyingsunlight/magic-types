@@ -10,6 +10,9 @@
 
 ## 使用方法
 ### npm 模块
+```shell
+npm i magic-types
+```
 ```typescript
 import { fetchMime, base64Mime, arraybufferMime } from 'magic-types'
 
@@ -23,6 +26,11 @@ console.log(base64Mime("iVBORw0KGgoAAAANSUhEUgAAAMgAAAC3CAMAAABg8uG4AAACNFBMVEVM
 const res = await fetch("https://en.wikipedia.org/static/images/icons/wikipedia.png")
 const buffer = await res.arrayBuffer()
 console.log(arraybufferMime(buffer))
+```
+### CDN 引用
+```html
+<script src="https://unpkg.com/xmind-embed-viewer/dist/umd/xmind-embed-viewer.js"></script>
+<!-- or https://www.jsdelivr.com/npm/xmind-embed-viewer/dist/umd/xmind-embed-viewer.js -->
 ```
 
 # Document

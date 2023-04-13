@@ -1,6 +1,6 @@
 {
   "name": "magic-types",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/esm/index.js",
   "license": "MIT",
   "files": [
@@ -9,7 +9,8 @@
     "readme.md"
   ],
   "scripts": {
-    "prepare": "rm -rf dist && tsc -p tsconfig.json",
+    "prepare": "rm -rf dist && npm run build",
+    "build": "webpack build --config-name build && tsc -p tsconfig.json",
     "test": "ts-mocha -p test/tsconfig.json test/index.ts"
   },
   "maintainers": [
@@ -24,8 +25,11 @@
     "base64-arraybuffer": "^1.0.2",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
+    "ts-loader": "^9.4.2",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.3",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
   }
 }

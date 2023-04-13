@@ -6,10 +6,13 @@ Get the `MIME` of the data by parsing the [Magic Number](https://en.wikipedia.or
 ## Features
 - Supports browsers and Nodejs
 - Efficient and no need for complete data, can infer `MIME` directly from `url`/`Base64`/`ArrayBuffer` data
-- Simple and small, no dependencies
+- Simple and small (5kb), no dependencies
 
 ## Usage
 ### npm module
+```shell
+npm i magic-types
+```
 ```typescript
 import { fetchMime, base64Mime, arraybufferMime } from 'magic-types'
 
@@ -23,6 +26,11 @@ console.log(base64Mime("iVBORw0KGgoAAAANSUhEUgAAAMgAAAC3CAMAAABg8uG4AAACNFBMVEVM
 const res = await fetch("https://en.wikipedia.org/static/images/icons/wikipedia.png")
 const buffer = await res.arrayBuffer()
 console.log(arraybufferMime(buffer))
+```
+### From CDN
+```html
+<script src="https://unpkg.com/xmind-embed-viewer/dist/umd/xmind-embed-viewer.js"></script>
+<!-- or https://www.jsdelivr.com/npm/xmind-embed-viewer/dist/umd/xmind-embed-viewer.js -->
 ```
 
 # Document
