@@ -29,8 +29,8 @@ console.log(arraybufferMime(buffer))
 ```
 ### From CDN
 ```html
-<script src="https://unpkg.com/xmind-embed-viewer/dist/umd/xmind-embed-viewer.js"></script>
-<!-- or https://www.jsdelivr.com/npm/xmind-embed-viewer/dist/umd/xmind-embed-viewer.js -->
+<script src="https://unpkg.com/magic-types/dist/magic-types.umd.js"></script>
+<!-- or https://www.jsdelivr.com/npm/magic-types/dist/umd/magic-types.umd.js -->
 ```
 
 # Document
